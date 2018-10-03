@@ -1,0 +1,26 @@
+﻿<Window x:Class="AutoSlideShow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoSlideShow"
+        mc:Ignorable="d"
+        Title="SimpleSlideShow (Ver. 1.0.3)" Height="230.198" Width="380" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="スライドショー開始" Margin="155,130,10,0" x:Name="ButtonStartSlideShow" RenderTransformOrigin="0.589,0.376" Click="ButtonStartSlideShow_Click" Height="55" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadioButtonSort" Content="ファイル名順" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" IsThreeState="True" GroupName="RadioButtonGroup1" Checked="RadioButtonSort_Checked"/>
+        <RadioButton x:Name="RadioButtonSortRandom" Content="ランダム" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" IsThreeState="True" GroupName="RadioButtonGroup1" Checked="RadioButtonSortRandom_Checked"/>
+        <CheckBox x:Name="CheckBoxLoop" Content="ループ再生" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="再生順番" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top"/>
+        <Label Content="再生画像数 : " HorizontalAlignment="Left" Margin="155,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="画像の切替時間:" HorizontalAlignment="Left" Margin="155,53,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="254,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" x:Name="TextBoxImageChangeTime"/>
+        <Label Content="秒" HorizontalAlignment="Left" Margin="291,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelImageSum" Content="XX" HorizontalAlignment="Left" Margin="234,22,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelStatus" Content="Label" Margin="123,90,0,0" Height="25" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxShowClock" Content="時刻表示" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxDisplayFolder" Content="フォルダ名表示" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxDisplayFileName" Content="ファイル名表示" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
