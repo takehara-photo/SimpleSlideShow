@@ -35,6 +35,14 @@ namespace AutoSlideShow
             Init();
             //ReadSettings
             ReadSettings();
+
+
+            System.Reflection.Assembly asm =
+    System.Reflection.Assembly.GetExecutingAssembly();
+            //バージョンの取得
+            System.Version ver = asm.GetName().Version;
+            this.Title = "SimpleSlideShow " + ver.ToString().Substring(0, 5);
+            ;
         }
 
        public void ReadSettings()

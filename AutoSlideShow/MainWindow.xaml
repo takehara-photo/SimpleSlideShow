@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoSlideShow"
         mc:Ignorable="d"
-        Title="SimpleSlideShow (Ver. 1.0.3)" Height="230.198" Width="380" ResizeMode="NoResize">
+        Icon="f588be13aa5cbedf1e0f36df7c4119e0_xxo.ico"
+        Title="SimpleSlideShow" Height="230.198" Width="380" ResizeMode="NoResize">
     <Grid>
         <Button Content="スライドショー開始" Margin="155,130,10,0" x:Name="ButtonStartSlideShow" RenderTransformOrigin="0.589,0.376" Click="ButtonStartSlideShow_Click" Height="55" VerticalAlignment="Top"/>
         <RadioButton x:Name="RadioButtonSort" Content="ファイル名順" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" IsThreeState="True" GroupName="RadioButtonGroup1" Checked="RadioButtonSort_Checked"/>
